@@ -41,7 +41,7 @@
 &none      &kp N1                  &kp N2                    &kp N3                &kp N4                &kp N5                                         &kp N6  &kp N7                 &kp N8                 &kp N9                     &kp N0                      &kp BACKSPACE
 &kp TAB    &kp Q                   &kp W                     &kp E                 &kp R                 &kp T                                          &kp Y   &kp U                  &kp I                  &kp O                      &kp P                       &kp BACKSLASH
 &kp GRAVE  &home_row LEFT_SHIFT A  &home_row LEFT_CONTROL S  &home_row LEFT_GUI D  &home_row LEFT_ALT F  &kp G                                          &kp H   &home_row RIGHT_ALT J  &home_row RIGHT_GUI K  &home_row RIGHT_CONTROL L  &home_row RIGHT_SHIFT SEMI  &kp ENTER
-&none      &kp Z                   &kp X                     &kp C                 &kp V                 &kp B   &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N   &kp M                  &kp COMMA              &kp DOT                    &kp FSLH                    &none
+&none      &kp Z                   &kp X                     &kp C                 &kp V                 &kp B   &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N   &kp M                  &kp COMMA              &kp DOT                    &kp FSLH                    &kp SQT
                                                              &none                 &none                 &mo 1   &kp ESCAPE          &kp SPACE          &mo 2   &none                  &none
             >;
         };
@@ -50,11 +50,11 @@
             label = "ARNUM";
             display-name = "ARNUM";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                   &trans          &trans    &trans        &trans     &trans  &kp PAGE_UP
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                   &kp N6          &kp N7    &kp N8        &kp N9     &kp N0  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                   &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &kp SINGLE_QUOTE
-&trans  &trans  &trans  &trans  &trans  &trans  &none     &kp RIGHT_PARENTHESIS  &trans          &trans    &trans        &trans     &trans  &kp PAGE_DOWN
-                        &trans  &trans  &trans  &trans    &trans                 &trans          &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                 &trans          &trans    &trans        &trans     &trans  &kp PAGE_UP
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                                 &kp N6          &kp N7    &kp N8        &kp N9     &kp N0  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                 &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans          &trans    &trans        &trans     &trans  &kp PAGE_DOWN
+                        &trans  &trans  &trans  &trans                  &trans                 &trans          &trans    &trans
             >;
         };
 
@@ -62,11 +62,11 @@
             label = "FSYM";
             display-name = "FSYM";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3          &bt BT_SEL 4                                          &soft_off   &trans             &trans           &trans     &trans     &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5                &kp F6                                                &kp F7      &kp F8             &kp F9           &kp F10    &kp F11    &kp F12
-&trans      &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR            &kp PRCNT                                             &kp CARET   &kp AMPS           &kp KP_MULTIPLY  &kp MINUS  &kp EQUAL  &trans
-&trans      &trans        &trans        &trans        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp LEFT_PARENTHESIS    &trans  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans     &trans     &trans
-                                        &trans        &trans                &trans                &trans                  &trans  &trans      &trans             &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3          &bt BT_SEL 4                            &soft_off   &trans             &trans           &trans     &trans     &trans
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5                &kp F6                                  &kp F7      &kp F8             &kp F9           &kp F10    &kp F11    &kp F12
+&trans      &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR            &kp PRCNT                               &kp CARET   &kp AMPS           &kp KP_MULTIPLY  &kp MINUS  &kp EQUAL  &trans
+&trans      &trans        &trans        &trans        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans    &trans  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans     &trans     &trans
+                                        &trans        &trans                &trans                &trans    &trans  &trans      &trans             &trans
             >;
         };
 
